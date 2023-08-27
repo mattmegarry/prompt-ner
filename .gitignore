@@ -7,3 +7,4 @@ venv/
 explanations.mp3
 temp.pdf
 .streamlit
+env
