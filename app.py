@@ -22,7 +22,7 @@ prompt = st.text_input('From the tweets I have provided, please give me a list o
 if prompt:
     prompt = f"{anthropic.HUMAN_PROMPT}{all_tweets}\n\nFrom the tweets I have provided, please give me a list of {prompt}{anthropic.AI_PROMPT}"
     print(prompt)
-    response = claude.completion(prompt=prompt, model="claude-v1.3-100k", max_tokens_to_sample=2000)
+    response = claude.completion(prompt=prompt, model="claude-2", max_tokens_to_sample=2000)
     print(response)
     print(type(response))
     st.write(response['completion'])
